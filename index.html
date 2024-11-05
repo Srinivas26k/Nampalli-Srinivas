@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinivas Nampalli - Full Stack & AI Engineer</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="nav-blur">
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-text">SN</div>
+                <div class="logo-dot"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-shapes"></div>
+            <canvas id="noise-canvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-intro">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1 class="hero-title">Srinivas Nampalli</h1>
+                    <div class="hero-subtitle">
+                        <span class="typed-text"></span>
+                        <span class="cursor-typing"></span>
+                    </div>
+                    <p class="hero-description">Bridging the gap between Mechanical Engineering and Artificial Intelligence</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-icons">
+                        <div class="tech-icon" data-tooltip="Python"><i class="fab fa-python"></i></div>
+                        <div class="tech-icon" data-tooltip="AI/ML"><i class="fas fa-brain"></i></div>
+                        <div class="tech-icon" data-tooltip="Engineering"><i class="fas fa-cogs"></i></div>
+                        <div class="tech-icon" data-tooltip="Innovation"><i class="far fa-lightbulb"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">Scroll to explore</div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://via.placeholder.com/400x500" alt="Srinivas Nampalli">
+                        <div class="frame-border"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="about-cards">
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="card-content">
+                                <h3>Education</h3>
+                                <p>Minor in AI - IIT Ropar</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="card-content">
+                                <h3>Experience</h3>
+                                <p>Ford & GE Aerospace</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="about-description">I am a passionate Mechanical Engineer with a growing expertise in Artificial Intelligence. My unique blend of mechanical engineering knowledge and AI skills allows me to bridge the gap between traditional engineering and cutting-edge technology.</p>
+                    <div class="achievement-grid">
+                        <div class="achievement">
+                            <span class="number" data-count="5">0</span>
+                            <span class="label">Years Experience</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="number" data-count="20">0</span>
+                            <span class="label">Projects Completed</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="number" data-count="15">0</span>
+                            <span class="label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Artificial Intelligence</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Machine Learning">
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Deep Learning">
+                            <div class="skill-info">
+                                <span class="skill-name">Deep Learning</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Computer Vision">
+                            <div class="skill-info">
+                                <span class="skill-name">Computer Vision</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Engineering</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="CAD/CAM">
+                            <div class="skill-info">
+                                <span class="skill-name">CAD/CAM</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="3D Modeling">
+                            <div class="skill-info">
+                                <span class="skill-name">3D Modeling</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tools-section">
+                <h3>Tools & Technologies</h3>
+                <div class="tools-grid">
+                    <div class="tool-item" data-tooltip="Python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="tool-item" data-tooltip="TensorFlow">
+                        <img src="icons/tensorflow.svg" alt="TensorFlow">
+                    </div>
+                    <div class="tool-item" data-tooltip="PyTorch">
+                        <img src="icons/pytorch.svg" alt="PyTorch">
+                    </div>
+                    <div class="tool-item" data-tooltip="SolidWorks">
+                        <img src="icons/solidworks.svg" alt="SolidWorks">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Ford Project">
+                        <div class="project-overlay">
+                            <div class="project-category">AI & Automation</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Battery Analysis & PID Control</h3>
+                        <p>Advanced battery capacity analysis and PID controller optimization for Ford's electric vehicle systems.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Control Systems</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- More project cards... -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:srinivasvarma764@gmail.com">srinivasvarma764@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/srinivas-nampalli/" target="_blank">Connect with me</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SN</div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Srinivas Nampalli. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cursor.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/noise.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
