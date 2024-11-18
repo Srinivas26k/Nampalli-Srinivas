@@ -91,4 +91,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Update typing text content
+    const typingTexts = [
+        "Mechanical Engineer",
+        "AI Enthusiast",
+        "Tech Innovator",
+        "Content Creator"
+    ];
+
+    // Update achievement numbers
+    const achievements = {
+        experience: 3,
+        projects: 15,
+        technologies: 12
+    };
+
+    // Update skill percentages
+    const skills = {
+        'CAD/CAM': 95,
+        'AI/ML': 90,
+        'Python': 85,
+        'Engineering Design': 90,
+        'Data Analysis': 85
+    };
 });

@@ -260,3 +260,133 @@ nav {
     from { width: 0; }
     to { width: var(--percent); }
 }
+
+/* Tools Section Styling */
+.tools-section {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: var(--bg-color);
+}
+
+.tools-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    grid-template-rows: repeat(3, 1fr);    /* 3 rows */
+    gap: 2.5rem;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tool-item {
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.tool-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tool-icon {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tool-item:hover .tool-icon {
+    transform: scale(1.1);
+}
+
+.tool-item::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    background: var(--text-color);
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    z-index: 100;
+}
+
+.tool-item:hover::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: -50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .tools-grid {
+        width: 95%;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tools-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .tool-item {
+        padding: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .tool-item {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tools-grid {
+        width: 100%;
+        gap: 1.2rem;
+    }
+    
+    .tool-item {
+        padding: 1.2rem;
+    }
+    
+    .tools-section h3 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+}
