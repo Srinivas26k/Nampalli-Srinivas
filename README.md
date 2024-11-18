@@ -33,13 +33,11 @@ A modern, responsive portfolio showcasing my expertise in Mechanical Engineering
 
 ## 📚 Education
 
-- Bachelor of Technology in Mechanical Engineering
+- Diploma  in Mechanical Engineering
 - Minor in Artificial Intelligence
 - German Language Certification (A1)
 
 ## 🏆 Achievements
-
-- Published research papers in propulsion systems
 - Developed innovative water purification system
 - Led multiple engineering projects
 
